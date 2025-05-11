@@ -12,6 +12,12 @@ pub struct Cli {
     #[arg(long)]
     pub list: bool,
 
-    #[arg(long = "ip-allow")]
-    pub ip_allow: Option<String>,
+    #[arg(long = "check-ip")]
+    pub check_ip:  Option<String>,
+
+    #[arg(long = "deny-ip")]
+    pub deny_ip:  Option<String>,
+
+    #[arg(long = "allow-ip")]
+    pub allow_ip: Option<String>,
 }

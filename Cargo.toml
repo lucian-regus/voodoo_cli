@@ -5,3 +5,5 @@ edition = "2024"
 
 [dependencies]
 clap = { version = "4", features = ["derive"] }
+postgres = { version = "0.19", features = ["with-chrono-0_4"] }
+chrono = { version = "0.4", features = ["serde"] }

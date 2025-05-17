@@ -20,4 +20,11 @@ pub struct Cli {
 
     #[arg(long = "allow-ip")]
     pub allow_ip: Option<String>,
+
+    #[arg(long = "check-file")]
+    pub check_file: Option<String>,
+
+    #[arg(long = "allow-file")]
+    pub allow_file: Option<i32>,
+
 }

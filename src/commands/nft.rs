@@ -1,9 +1,8 @@
-use postgres::{Client, NoTls};
+use postgres::{Client};
 use std::fs::File;
 use std::io::{Write, Result};
 use std::process::Command;
 
-const DB_URL: &str = "host=localhost user=voodoo password=DA5VGLB1BWbB82wJ2pv3 dbname=voodoo";
 const NFT_FILE_PATH: &str = "/etc/nftables.conf";
 const NFT_TABLE_NAME: &str = "filter";
 const NFT_SET_NAME: &str = "blacklisted_ips";

@@ -196,7 +196,7 @@ pub fn allow_file(file_id: &i32){
                         match move_and_rename_file(&quarantine_path, &original_path) {
                             Ok(_) => println!("File {} allowed now.", format!("{}/{}", original_path, old_name)),
                             Err(e) => {
-                                let update_query_result = client.execute(
+                                let _ = client.execute(
                                         "UPDATE malware_detection_log
                                         SET allowed_at = NULL
                                         WHERE id = $1",
